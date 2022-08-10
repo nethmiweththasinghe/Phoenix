@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Your Bookings</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		body
+		{
+			width:100%;
+			margin: 0;
+			padding:0;
+			overflow: hidden;
+			background-color: gray;
+			background-size: cover;
+			background-position: center;
+			height: 80vh;
+			font-family: sans-serif;
+		}
+		.nav
+		{
+			height:100%;
+			position: fixed;
+			left: -2em;
+			top: 0;
+			z-index: 1000;
+			transform-style: preserve-3d;
+			perspective: 1000px;
+		}
+		.bar
+		{
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 990;
+			height:100%;
+			background: #55abd9;
+		}
+		.bar li
+		{
+			list-style:none;
+		}
+		.bar a
+		{
+			display: block;
+			width: 64px;
+			height: 64px;
+			line-height: 64px;
+			text-align: center;
+			font-size: 1.6em;
+			color: white;
+			transition: all 0.5s ease-out;
+		}
+		.text
+		{
+            position: fixed;
+            left: 63px;
+            top: 0;
+            z-index: 980;
+            height: 100%;
+            background: #172121;
+            border-right: 1px solid rgba(0,0,0,0.3);
+		}
+		.text li
+		{
+			border-bottom: 1px solid rgba(0,0,0,0.3);
+		}
+		.text a
+		{
+			display: block;
+			width: 200px;
+			height: 64px;
+            line-height: 64px;
+            text-indent: 1em;
+            font-size: 1.4em;
+            text-decoration: none;
+            color: #999999;
+            text-shadow: 0 1px 0 black;
+            transition: all 1s ease;
+		}
+		.text a:hover
+		{
+			color: white;
+			transform: translateX(10px);
+		}
+		.check
+		{
+            position: fixed;
+            left: 500px;
+            top: 0;
+           
+            height: 100%;
+            width: 100%;
+		}
+	</style>
+
+</head>
+<body>
+
+<div id="nav" class="nav">
+	<div class="bar">
+		<ul>
+			<li><a href="userDash.jsp"><i class="fa fa-home"></i></a></li>
+			<li><a href="Bookings.html"><i class="fa fa-list"></i></a></li>
+			<li><a href="flightSearch.html"><i class="fa fa-search"></i></a></li>
+			<li><a href="home.html"><i class="fa fa-cog"></i></a></li>
+			
+		</ul>
+	</div>
+
+	<div class="text">
+	<ul> 
+	    <li><a href="userDash.jsp">Profile</a></li>
+	    <li><a href="Bookings.html">Bookings</a></li>
+	    <li><a href="flightSearch.html">Search Flights</a></li>
+	    <li><a href="home.html">Log out</a></li>
+	    
+	    </ul>	
+	</div>
+	</div>
+
+
+  <a href="userDash.jsp"><input type="submit" value="Home" /> </a>
+  
+        <div class="check">
+        
+    	<h1>Let's Select Your Own Trip</h1>
+        
+        
+        <form  method="POST" name="form" action="ticketBookingServlet">
+                
+                <p>Ticket ID</p>
+                <input type="text" name="id" placeholder="Enter Ticket ID" required>
+            
+    		<p>Username</p>
+                <input type="text" name="name" placeholder="Enter Username" required>
+                
+                <p>Contact</p>
+                <input type="text" name="contact" placeholder="Contact" required>
+                
+                <p>Date</p>
+                <input type="date" name="date" placeholder="Date" required>
+                
+    		<p>From-To</p>
+    		<input type="text" name="city" placeholder="From-To" required>
+                <br>
+                <br>
+                <input type="submit" name="Submit" value="Submit" />
+                <input type="reset" name="Cancel" value="Cancel" />
+                
+</form>
+                </div>
+  
+  
+  
+
+
+
+
+</body>
+</html>

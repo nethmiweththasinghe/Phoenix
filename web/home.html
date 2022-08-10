@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="homePage.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        *{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+        
+        background:linear-gradient(to bottom,darkblue, white) ;       
+	background-image: url(a1.jpeg);
+	background-size: cover;
+	font-family: sans-serif;
+        margin-left: -1.5px;
+        margin-right: 0.5px;
+        
+
+}
+.menu-bar
+{
+	background: linear-gradient(to bottom,darkslategray, lightblue) ; 
+	text-align: center;
+        height: 17.5%;
+}
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+.menu-bar ul li
+{
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
+}
+.menu-bar ul li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+	background:black;
+	border-radius: 20px;
+}
+.menu-bar .fa
+{
+	margin-right: 8px;
+}
+.sub-menu-1
+{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+	display: block;
+	position: absolute;
+	background: darkgray;
+	margin-top: 15px;
+	margin-left: 15px;
+        
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display:block;
+	margin: 10px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+        transform: transparent;
+        opacity: 0.9;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+	color: lightblue;
+}
+.fa-angle-right
+{
+	float: right;
+}
+
+p
+{
+	font-family: cursive;
+	font-size: 100px;
+	font-weight: bold;
+	color: purple;
+	text-align: center;
+	text-shadow: 10px;
+	margin-bottom: 40%;
+	margin-top: 30%;
+	padding: 15px;
+}
+.logo img{
+    float: left;
+    width: 230px;
+    height: 100px;
+    
+}
+
+
+img {vertical-align: middle;}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="menu-bar">
+<div class="logo">
+    <img src="logo.jpg">
+</div>
+    
+    <ul>
+    <li><a href="#"><i class="fa fa-list" ></i>Services</a>
+    <div class="sub-menu-1">
+        <ul>
+            		<li><a href="https://www.google.lk/maps/@7.4125501,80.4061191,11.84z">
+                        Google Map</a></li>
+                        <li><a href="#">Setting</a></li>
+                        <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+    </li>
+    
+    <li class="active"><a href="home.html"><i class="fa fa-home" ></i>Home</a></li>
+    
+    <li><a href="aboutUs.html"><i class="fa fa-user" ></i>About Us</a></li>
+  
+    <li><a href="ticketdetails.html"><i class="fa fa-edit" ></i>Tickets Details</a></li>
+    	
+    <li><a href="contact.html"><i class="fa fa-phone" ></i>Contact Us</a></li>
+    	
+    <li><a href="#"><i class="fa fa-users" ></i>Log In</a>
+    <div class="sub-menu-1">
+    <ul>
+                        <li><a href="userLogin.html">Client Log In </a></li>
+            		<li><a href="staffLogin.html">Staff Log In</a></li>
+                        <li><a href="adminLogin.html">Admin Log In</a></li>
+                        
+    </ul>
+    </div>
+    </li>
+     
+    </ul>
+    </div>
+        
+
+<marquee><font size="5" color="red">If you need to book tickets please make sure that you are login with your username and password/create an account for you!!!</font></marquee>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="p1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+</div>
+   
+
+</body>
+</html>
+

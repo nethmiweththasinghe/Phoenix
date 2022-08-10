@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="userLogin.css">
+
+    </head>
+    <body>
+        <div class="loginbox">
+        
+    	<img src="p2.jpeg" class="avatar">
+    	<h1>If you are a staff member Login here</h1>
+        
+        <form action="staffLoginServlet" method="POST" name="form">
+            
+    		<p>Username</p>
+                <input type="text" name="name" placeholder="Enter Username" required>
+                
+    		<p>Password</p>
+    		<input type="Password" name="pwd" placeholder="Enter Password" required>
+                
+                <input type="submit" name="login" value="login">
+    		<a href="#">Lost Your Password?</a><br>
+    		<a href="staffSignUp.html">Don't have an account?</a>
+    		
+    	</form>
+    </div>
+    </body>
+</html>
