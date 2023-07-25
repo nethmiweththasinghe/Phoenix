@@ -1,2 +1,5 @@
 # Phoenix
-Airline management system
+Airline management system 
+
+- Java
+- sql
